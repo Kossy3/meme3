@@ -17,7 +17,7 @@ jobs:
 
       # Jekyllによる _ 始まりのファイル無視を防止する
       - name: Create .nojekyll
-        run: touch /web/.nojekyll
+        run: touch ./web/.nojekyll
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
