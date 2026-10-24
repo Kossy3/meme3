@@ -17,10 +17,10 @@ jobs:
 
       # Jekyllによる _ 始まりのファイル無視を防止する
       - name: Create .nojekyll
-        run: touch build/web/.nojekyll
+        run: touch /web/.nojekyll
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build/web 
+          publish_dir: ./web 
